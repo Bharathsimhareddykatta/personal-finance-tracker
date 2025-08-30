@@ -1,0 +1,285 @@
+Date,Description,Category,Amount,Type,Payment_Method
+2025-01-01,Company Payroll,Salary,64488.24,Income,Bank Transfer
+2025-01-01,Upwork Payout,Freelance,9534.29,Income,Bank Transfer
+2025-01-02,Clinic,Health,1274.61,Expense,UPI
+2025-01-03,Misc,Others,565.43,Expense,UPI
+2025-01-05,House Rent,Rent,12000.0,Expense,UPI
+2025-01-05,Zomato,Food,411.09,Expense,Card
+2025-01-06,Ola,Transport,243.11,Expense,UPI
+2025-01-06,Pharmacy,Health,734.69,Expense,Cash
+2025-01-07,BigBasket,Groceries,1088.36,Expense,Cash
+2025-01-07,Clinic,Health,575.92,Expense,Card
+2025-01-09,Bus,Transport,307.24,Expense,Card
+2025-01-09,Netflix,Entertainment,30.0,Expense,UPI
+2025-01-10,YouTube Premium,Subscriptions,300.0,Expense,Card
+2025-01-10,Amazon,Shopping,2319.6,Expense,Cash
+2025-01-10,Freelance Gig,Freelance,3055.64,Income,Bank Transfer
+2025-01-11,Clinic,Health,696.32,Expense,Cash
+2025-01-12,Electricity Bill,Electricity,1592.82,Expense,UPI
+2025-01-12,Airtel Fiber,Internet,840.26,Expense,Card
+2025-01-13,Misc,Others,30.0,Expense,Card
+2025-01-13,Cafe,Food,456.38,Expense,Card
+2025-01-14,Reliance Fresh,Groceries,1224.07,Expense,Card
+2025-01-16,Ola,Transport,171.57,Expense,Card
+2025-01-16,Gift,Others,30.0,Expense,Cash
+2025-01-18,Netflix,Entertainment,357.08,Expense,UPI
+2025-01-19,Metro,Transport,406.25,Expense,Cash
+2025-01-21,Spotify,Entertainment,613.4,Expense,Cash
+2025-01-21,Cafe,Food,30.0,Expense,Card
+2025-01-22,Amazon,Shopping,2453.41,Expense,UPI
+2025-01-22,Swiggy,Food,564.58,Expense,Card
+2025-01-23,D-Mart,Groceries,1158.53,Expense,UPI
+2025-01-23,Ola,Transport,206.73,Expense,Cash
+2025-01-26,Flipkart,Shopping,1499.7,Expense,Card
+2025-01-27,Zomato,Food,122.16,Expense,Cash
+2025-01-27,Ola,Transport,239.63,Expense,Cash
+2025-02-01,Netflix,Entertainment,753.98,Expense,UPI
+2025-02-01,Company Payroll,Salary,66572.26,Income,Bank Transfer
+2025-02-01,Misc,Others,195.58,Expense,Card
+2025-02-03,Netflix,Entertainment,1500.36,Expense,UPI
+2025-02-04,Spotify,Entertainment,237.28,Expense,Card
+2025-02-05,House Rent,Rent,12000.0,Expense,Card
+2025-02-05,BigBasket,Groceries,974.51,Expense,UPI
+2025-02-06,Gift,Others,1276.13,Expense,Cash
+2025-02-06,Swiggy,Food,355.25,Expense,Card
+2025-02-08,Bus,Transport,560.06,Expense,Card
+2025-02-08,Myntra,Shopping,3304.01,Expense,UPI
+2025-02-09,Zomato,Food,602.44,Expense,Cash
+2025-02-10,iCloud,Subscriptions,300.0,Expense,Cash
+2025-02-11,Swiggy,Food,702.79,Expense,Cash
+2025-02-12,Stationery,Others,46.0,Expense,UPI
+2025-02-12,Jio Fiber,Internet,988.18,Expense,UPI
+2025-02-12,Electricity Bill,Electricity,2626.52,Expense,Card
+2025-02-12,D-Mart,Groceries,1230.5,Expense,Card
+2025-02-13,Movie,Entertainment,30.0,Expense,Cash
+2025-02-14,Cafe,Food,133.33,Expense,UPI
+2025-02-14,Pharmacy,Health,2633.01,Expense,UPI
+2025-02-16,Clinic,Health,1235.41,Expense,UPI
+2025-02-16,Pharmacy,Health,1688.46,Expense,UPI
+2025-02-17,Flipkart,Shopping,2073.3,Expense,Cash
+2025-02-19,Pharmacy,Health,1535.91,Expense,Cash
+2025-02-19,Clinic,Health,308.71,Expense,Cash
+2025-02-20,BigBasket,Groceries,854.26,Expense,UPI
+2025-02-21,Movie,Entertainment,849.62,Expense,UPI
+2025-02-22,Netflix,Entertainment,451.55,Expense,Card
+2025-02-22,D-Mart,Groceries,1012.2,Expense,UPI
+2025-02-23,Misc,Others,502.96,Expense,Card
+2025-02-23,Bus,Transport,481.62,Expense,UPI
+2025-02-24,Swiggy,Food,233.66,Expense,Card
+2025-02-26,Swiggy,Food,538.58,Expense,Card
+2025-03-01,Company Payroll,Salary,66758.57,Income,Bank Transfer
+2025-03-02,Ola,Transport,293.69,Expense,Card
+2025-03-02,Clinic,Health,226.52,Expense,Cash
+2025-03-03,Netflix,Entertainment,691.73,Expense,Card
+2025-03-04,Freelance Gig,Freelance,10147.02,Income,Bank Transfer
+2025-03-05,House Rent,Rent,12000.0,Expense,Cash
+2025-03-05,Pharmacy,Health,531.98,Expense,UPI
+2025-03-06,BigBasket,Groceries,1181.12,Expense,Cash
+2025-03-08,Metro,Transport,344.57,Expense,UPI
+2025-03-09,Spotify,Entertainment,30.0,Expense,Card
+2025-03-10,iCloud,Subscriptions,300.0,Expense,UPI
+2025-03-12,Freelance Gig,Freelance,7436.55,Income,Bank Transfer
+2025-03-12,Amazon,Shopping,5191.23,Expense,UPI
+2025-03-12,Airtel Fiber,Internet,790.18,Expense,Cash
+2025-03-12,Electricity Bill,Electricity,1376.39,Expense,Card
+2025-03-12,Spotify,Entertainment,925.38,Expense,UPI
+2025-03-13,Restaurant,Food,250.55,Expense,Cash
+2025-03-14,Reliance Fresh,Groceries,862.56,Expense,Card
+2025-03-15,Clinic,Health,1105.58,Expense,UPI
+2025-03-16,Cafe,Food,397.4,Expense,Card
+2025-03-17,Myntra,Shopping,1829.23,Expense,UPI
+2025-03-17,Stationery,Others,713.16,Expense,UPI
+2025-03-18,Reliance Fresh,Groceries,2067.41,Expense,Cash
+2025-03-18,Spotify,Entertainment,1236.48,Expense,Card
+2025-03-20,Spotify,Entertainment,1173.18,Expense,Cash
+2025-03-20,Movie,Entertainment,1336.57,Expense,Cash
+2025-03-21,Stationery,Others,30.0,Expense,Cash
+2025-03-21,Pharmacy,Health,1158.3,Expense,UPI
+2025-03-21,Upwork Payout,Freelance,9902.03,Income,Bank Transfer
+2025-03-22,Pharmacy,Health,1761.61,Expense,Cash
+2025-03-22,Freelance Gig,Freelance,5796.89,Income,Bank Transfer
+2025-03-23,Spotify,Entertainment,526.5,Expense,Cash
+2025-03-24,Movie,Entertainment,30.0,Expense,UPI
+2025-03-24,Netflix,Entertainment,748.82,Expense,UPI
+2025-03-26,Spotify,Entertainment,564.05,Expense,Cash
+2025-03-27,Metro,Transport,295.15,Expense,Cash
+2025-03-28,Myntra,Shopping,1589.14,Expense,UPI
+2025-03-29,Myntra,Shopping,2208.82,Expense,UPI
+2025-03-29,Bus,Transport,472.42,Expense,Card
+2025-03-30,Restaurant,Food,30.0,Expense,Card
+2025-03-30,Freelance Gig,Freelance,500.0,Income,Bank Transfer
+2025-03-31,Swiggy,Food,323.13,Expense,UPI
+2025-04-01,Company Payroll,Salary,64860.04,Income,Bank Transfer
+2025-04-02,Movie,Entertainment,1070.71,Expense,UPI
+2025-04-04,Netflix,Entertainment,196.18,Expense,Card
+2025-04-05,House Rent,Rent,12000.0,Expense,Card
+2025-04-05,Restaurant,Food,401.63,Expense,Card
+2025-04-06,Freelance Gig,Freelance,8362.28,Income,Bank Transfer
+2025-04-06,Movie,Entertainment,1418.36,Expense,Card
+2025-04-08,Stationery,Others,380.2,Expense,UPI
+2025-04-09,BigBasket,Groceries,1324.25,Expense,Card
+2025-04-10,YouTube Premium,Subscriptions,300.0,Expense,Card
+2025-04-11,Myntra,Shopping,4240.71,Expense,UPI
+2025-04-11,Netflix,Entertainment,30.0,Expense,UPI
+2025-04-12,Metro,Transport,386.44,Expense,Card
+2025-04-12,BigBasket,Groceries,1397.76,Expense,Card
+2025-04-12,Electricity Bill,Electricity,1866.87,Expense,Card
+2025-04-12,Jio Fiber,Internet,682.94,Expense,Cash
+2025-04-13,Netflix,Entertainment,361.65,Expense,UPI
+2025-04-13,D-Mart,Groceries,1349.13,Expense,Card
+2025-04-14,Stationery,Others,191.41,Expense,UPI
+2025-04-15,Ola,Transport,275.44,Expense,Card
+2025-04-16,Spotify,Entertainment,937.66,Expense,Cash
+2025-04-17,Flipkart,Shopping,943.7,Expense,Cash
+2025-04-18,Pharmacy,Health,105.63,Expense,UPI
+2025-04-18,Ola,Transport,32.51,Expense,Card
+2025-04-19,Stationery,Others,812.88,Expense,UPI
+2025-04-22,Gift,Others,30.0,Expense,Card
+2025-04-22,Reliance Fresh,Groceries,1258.8,Expense,Cash
+2025-04-23,Spotify,Entertainment,251.76,Expense,Card
+2025-04-23,Zomato,Food,296.13,Expense,UPI
+2025-04-24,Upwork Payout,Freelance,7431.77,Income,Bank Transfer
+2025-04-24,Ola,Transport,236.45,Expense,Cash
+2025-04-24,Uber,Transport,91.64,Expense,UPI
+2025-04-25,Gift,Others,353.3,Expense,Card
+2025-04-26,Myntra,Shopping,1696.77,Expense,UPI
+2025-04-27,Netflix,Entertainment,500.56,Expense,Card
+2025-04-29,Ola,Transport,209.13,Expense,Card
+2025-04-29,Freelance Gig,Freelance,6353.2,Income,Bank Transfer
+2025-04-30,Spotify,Entertainment,1044.42,Expense,UPI
+2025-05-01,Company Payroll,Salary,66697.8,Income,Bank Transfer
+2025-05-02,Cafe,Food,317.46,Expense,Cash
+2025-05-03,Movie,Entertainment,1230.29,Expense,UPI
+2025-05-05,House Rent,Rent,12000.0,Expense,UPI
+2025-05-06,Uber,Transport,319.98,Expense,UPI
+2025-05-06,D-Mart,Groceries,1077.62,Expense,Cash
+2025-05-07,Flipkart,Shopping,2475.41,Expense,Card
+2025-05-07,Flipkart,Shopping,1844.21,Expense,UPI
+2025-05-10,iCloud,Subscriptions,300.0,Expense,Card
+2025-05-11,BigBasket,Groceries,1226.51,Expense,Cash
+2025-05-12,Airtel Fiber,Internet,833.35,Expense,UPI
+2025-05-12,Electricity Bill,Electricity,1945.72,Expense,UPI
+2025-05-13,Flipkart,Shopping,4291.71,Expense,UPI
+2025-05-15,Restaurant,Food,522.26,Expense,Cash
+2025-05-15,Movie,Entertainment,179.09,Expense,UPI
+2025-05-16,Swiggy,Food,30.0,Expense,UPI
+2025-05-16,Cafe,Food,30.0,Expense,Card
+2025-05-18,Misc,Others,555.67,Expense,Card
+2025-05-20,Amazon,Shopping,445.65,Expense,Cash
+2025-05-22,Myntra,Shopping,3398.75,Expense,Cash
+2025-05-25,Flipkart,Shopping,30.0,Expense,UPI
+2025-05-26,Netflix,Entertainment,607.53,Expense,Cash
+2025-05-26,Pharmacy,Health,1876.66,Expense,Card
+2025-05-27,Metro,Transport,68.23,Expense,UPI
+2025-05-28,Reliance Fresh,Groceries,1029.14,Expense,Card
+2025-05-28,Freelance Gig,Freelance,14420.36,Income,Bank Transfer
+2025-05-30,Netflix,Entertainment,466.17,Expense,Card
+2025-05-31,Uber,Transport,259.26,Expense,Card
+2025-06-01,Company Payroll,Salary,67574.61,Income,Bank Transfer
+2025-06-02,Stationery,Others,568.71,Expense,Card
+2025-06-02,Pharmacy,Health,1113.33,Expense,UPI
+2025-06-04,Reliance Fresh,Groceries,1892.4,Expense,UPI
+2025-06-05,House Rent,Rent,12000.0,Expense,UPI
+2025-06-05,BigBasket,Groceries,1492.55,Expense,Cash
+2025-06-05,Ola,Transport,30.0,Expense,Cash
+2025-06-06,Clinic,Health,385.0,Expense,Cash
+2025-06-08,Bus,Transport,265.89,Expense,Card
+2025-06-08,Movie,Entertainment,161.96,Expense,Cash
+2025-06-09,Restaurant,Food,812.85,Expense,Cash
+2025-06-10,Spotify Premium,Subscriptions,300.0,Expense,Card
+2025-06-10,Amazon,Shopping,2826.87,Expense,Card
+2025-06-11,Reliance Fresh,Groceries,956.63,Expense,UPI
+2025-06-12,Electricity Bill,Electricity,652.03,Expense,Cash
+2025-06-12,Uber,Transport,212.2,Expense,UPI
+2025-06-12,Jio Fiber,Internet,660.89,Expense,Cash
+2025-06-15,Freelance Gig,Freelance,11561.36,Income,Bank Transfer
+2025-06-16,Spotify,Entertainment,30.0,Expense,Cash
+2025-06-16,Stationery,Others,961.04,Expense,Cash
+2025-06-17,Pharmacy,Health,2055.9,Expense,Cash
+2025-06-18,BigBasket,Groceries,581.65,Expense,Card
+2025-06-18,Zomato,Food,663.79,Expense,UPI
+2025-06-21,Clinic,Health,2915.47,Expense,Cash
+2025-06-22,Flipkart,Shopping,1092.34,Expense,UPI
+2025-06-22,Freelance Gig,Freelance,5256.57,Income,Bank Transfer
+2025-06-23,Stationery,Others,30.0,Expense,Card
+2025-06-24,Flipkart,Shopping,295.8,Expense,UPI
+2025-06-25,Restaurant,Food,452.24,Expense,Cash
+2025-06-25,Pharmacy,Health,1306.79,Expense,UPI
+2025-06-27,Upwork Payout,Freelance,11785.17,Income,Bank Transfer
+2025-06-28,Ola,Transport,333.86,Expense,Cash
+2025-06-29,Upwork Payout,Freelance,5014.49,Income,Bank Transfer
+2025-06-30,Ola,Transport,30.0,Expense,Cash
+2025-06-30,Bus,Transport,453.04,Expense,UPI
+2025-07-01,Company Payroll,Salary,64937.37,Income,Bank Transfer
+2025-07-01,Ola,Transport,342.57,Expense,Cash
+2025-07-03,Swiggy,Food,379.09,Expense,Cash
+2025-07-05,House Rent,Rent,12000.0,Expense,Cash
+2025-07-05,Bus,Transport,461.25,Expense,Cash
+2025-07-06,Pharmacy,Health,1150.09,Expense,Card
+2025-07-07,BigBasket,Groceries,446.12,Expense,Cash
+2025-07-09,Uber,Transport,30.0,Expense,Cash
+2025-07-09,Cafe,Food,379.4,Expense,Card
+2025-07-10,YouTube Premium,Subscriptions,300.0,Expense,UPI
+2025-07-10,Netflix,Entertainment,1008.08,Expense,UPI
+2025-07-10,Swiggy,Food,537.26,Expense,Cash
+2025-07-11,Ola,Transport,252.31,Expense,UPI
+2025-07-11,Ola,Transport,128.8,Expense,UPI
+2025-07-12,Jio Fiber,Internet,720.28,Expense,Cash
+2025-07-12,Electricity Bill,Electricity,1632.68,Expense,Cash
+2025-07-13,Restaurant,Food,422.39,Expense,Cash
+2025-07-14,Netflix,Entertainment,299.93,Expense,UPI
+2025-07-14,Swiggy,Food,355.39,Expense,Card
+2025-07-15,Zomato,Food,127.75,Expense,UPI
+2025-07-16,Clinic,Health,439.37,Expense,Cash
+2025-07-16,D-Mart,Groceries,1055.0,Expense,UPI
+2025-07-18,Gift,Others,392.18,Expense,Cash
+2025-07-19,Flipkart,Shopping,3628.45,Expense,UPI
+2025-07-19,Netflix,Entertainment,2104.36,Expense,UPI
+2025-07-22,Ola,Transport,353.39,Expense,UPI
+2025-07-22,Spotify,Entertainment,30.0,Expense,Card
+2025-07-23,Reliance Fresh,Groceries,1346.75,Expense,Cash
+2025-07-24,Ola,Transport,165.33,Expense,Card
+2025-07-27,Spotify,Entertainment,715.83,Expense,UPI
+2025-07-27,Clinic,Health,1207.43,Expense,UPI
+2025-07-28,Reliance Fresh,Groceries,1257.44,Expense,Cash
+2025-07-28,BigBasket,Groceries,1273.67,Expense,UPI
+2025-07-29,Freelance Gig,Freelance,7305.14,Income,Bank Transfer
+2025-07-29,Netflix,Entertainment,508.46,Expense,Cash
+2025-07-30,Spotify,Entertainment,1520.71,Expense,Card
+2025-07-30,Zomato,Food,511.98,Expense,UPI
+2025-07-31,Restaurant,Food,478.4,Expense,Card
+2025-07-31,Zomato,Food,98.23,Expense,UPI
+2025-08-01,Company Payroll,Salary,63987.17,Income,Bank Transfer
+2025-08-01,Restaurant,Food,217.17,Expense,Card
+2025-08-02,Bus,Transport,274.55,Expense,Card
+2025-08-03,Cafe,Food,80.49,Expense,Cash
+2025-08-04,Swiggy,Food,214.2,Expense,Cash
+2025-08-04,Gift,Others,334.11,Expense,UPI
+2025-08-05,House Rent,Rent,12000.0,Expense,Cash
+2025-08-05,Zomato,Food,298.28,Expense,Card
+2025-08-07,Ola,Transport,304.97,Expense,Cash
+2025-08-08,Misc,Others,1015.42,Expense,Cash
+2025-08-08,Stationery,Others,742.79,Expense,Cash
+2025-08-09,Netflix,Entertainment,1497.42,Expense,Card
+2025-08-10,iCloud,Subscriptions,300.0,Expense,Card
+2025-08-11,BigBasket,Groceries,1631.76,Expense,UPI
+2025-08-11,Pharmacy,Health,184.48,Expense,Card
+2025-08-12,Jio Fiber,Internet,714.79,Expense,Card
+2025-08-12,Electricity Bill,Electricity,1068.21,Expense,Card
+2025-08-12,Pharmacy,Health,78.94,Expense,UPI
+2025-08-14,Ola,Transport,258.35,Expense,Cash
+2025-08-15,Clinic,Health,30.0,Expense,UPI
+2025-08-18,Zomato,Food,388.47,Expense,Card
+2025-08-18,Movie,Entertainment,869.4,Expense,Card
+2025-08-19,Uber,Transport,290.2,Expense,UPI
+2025-08-21,Bus,Transport,393.2,Expense,UPI
+2025-08-21,Reliance Fresh,Groceries,1170.33,Expense,Cash
+2025-08-23,Amazon,Shopping,3762.71,Expense,Cash
+2025-08-23,Spotify,Entertainment,30.0,Expense,Cash
+2025-08-24,Netflix,Entertainment,30.0,Expense,Card
+2025-08-25,Cafe,Food,467.6,Expense,Cash
+2025-08-25,Spotify,Entertainment,371.19,Expense,UPI
+2025-08-30,na,food,200.0,Expense,Cash
+2025-08-30,na,food,20000.0,Expense,Cash
+2025-08-30,na,food,20000.0,Expense,Cash
+2025-08-30,na,transport,2000.0,Expense,Cash
