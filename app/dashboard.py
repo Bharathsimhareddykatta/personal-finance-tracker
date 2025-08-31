@@ -4,48 +4,56 @@ import numpy as np
 import plotly.express as px
 import streamlit as st
 from datetime import datetime
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
 
 st.set_page_config(page_title="Personal Finance Tracker", layout="wide")
 
-@st.cache_data
-def load_data(uploaded):
-    if uploaded is None:
-        df = pd.read_csv("data/transactions.csv")
-    else:
-        df = pd.read_csv(uploaded)
-    # Basic cleaning
-    if "Date" in df.columns:
-        df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+# Google Sheets setup
+SHEET_NAME = "transactions"  # Change to your sheet name
+SCOPE = ["https://spreadsheets.google.com/feeds",
+         "https://www.googleapis.com/auth/drive"]
+
+# Use secrets if deployed, else local credentials.json
+try:
+    creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", SCOPE)
+except:
+    st.error("⚠️ Google Sheets credentials not found. Upload credentials.json or set in Streamlit Secrets.")
+    st.stop()
+
+client = gspread.authorize(creds)
+sheet = client.open(SHEET_NAME).sheet1
+
+def load_data(uploaded=None):
+    records = sheet.get_all_records()
+    df = pd.DataFrame(records)
+    if df.empty:
+        return pd.DataFrame(columns=["Date", "Category", "Description", "Amount", "Type", "Payment_Method"])
+
+    # Cleaning
+    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
     df = df.dropna(subset=["Date"])
-    # Standardize text columns if present
-    for col in ["Category","Type","Payment_Method","Description"]:
-        if col in df.columns:
-            df[col] = df[col].astype(str).str.strip()
-            df[col] = df[col].replace({"nan": ""})
-    # Ensure Amount numeric
-    if "Amount" in df.columns:
-        df["Amount"] = pd.to_numeric(df["Amount"], errors="coerce").fillna(0.0)
-    # Derive month/year
+    df["Amount"] = pd.to_numeric(df["Amount"], errors="coerce").fillna(0.0)
+
+    for col in ["Category", "Type", "Payment_Method", "Description"]:
+        df[col] = df[col].astype(str).str.strip().replace({"nan": ""})
+
     df["Year"] = df["Date"].dt.year
     df["Month"] = df["Date"].dt.month
     df["YearMonth"] = df["Date"].dt.to_period("M").astype(str)
     return df
 
+def add_transaction(entry):
+    sheet.append_row([entry["Date"], entry["Category"], entry["Description"],
+                      entry["Amount"], entry["Type"], entry["Payment_Method"]])
+
 def kpi_card(label, value):
     st.metric(label, f"{value:,.0f}")
 
-st.title("💰 Personal Finance Tracker")
+st.title("💰 Personal Finance Tracker (Google Sheets)")
 
-with st.sidebar:
-    st.header("Data Source")
-    uploaded = st.file_uploader("Upload transactions CSV", type=["csv"], help="Leave empty to use the sample data.")
-    st.caption("Expected columns: Date, Description, Category, Amount, Type, Payment_Method")
-    st.divider()
-    st.header("Column Mapping (optional)")
-    st.write("If your CSV uses different column names, rename them below and re-upload.")
-
+# --- Sidebar Add Transaction ---
 st.sidebar.header("➕ Add New Transaction")
-
 with st.sidebar.form("add_expense_form"):
     new_date = st.date_input("Date", datetime.today())
     new_category = st.text_input("Category (e.g., Food, Transport, Salary)")
@@ -64,40 +72,38 @@ if submitted:
         "Type": new_type,
         "Payment_Method": new_payment
     }
-    try:
-        df_existing = pd.read_csv("data/transactions.csv")
-        df_existing = pd.concat([df_existing, pd.DataFrame([new_entry])], ignore_index=True)
-    except FileNotFoundError:
-        df_existing = pd.DataFrame([new_entry])
+    add_transaction(new_entry)
+    st.success("✅ Transaction added successfully! Saved to Google Sheets.")
 
-    df_existing.to_csv("data/transactions.csv", index=False)
-    st.success("✅ Transaction added successfully! Refresh to see updated dashboard.")
+# --- Load Data ---
+df = load_data()
 
-df = load_data(uploaded)
-
-# Filters
+# --- Filters ---
 st.sidebar.header("Filters")
-min_date, max_date = df["Date"].min(), df["Date"].max()
-date_range = st.sidebar.date_input("Date Range", (min_date, max_date), min_value=min_date, max_value=max_date)
+if not df.empty:
+    min_date, max_date = df["Date"].min(), df["Date"].max()
+    date_range = st.sidebar.date_input("Date Range", (min_date, max_date), min_value=min_date, max_value=max_date)
+else:
+    date_range = (datetime.today(), datetime.today())
 
-categories = ["All"] + sorted(df["Category"].dropna().unique().tolist()) if "Category" in df.columns else ["All"]
+categories = ["All"] + sorted(df["Category"].dropna().unique().tolist()) if not df.empty else ["All"]
 selected_cat = st.sidebar.selectbox("Category", categories, index=0)
 
-type_list = ["All"] + sorted(df["Type"].dropna().unique().tolist()) if "Type" in df.columns else ["All"]
+type_list = ["All"] + sorted(df["Type"].dropna().unique().tolist()) if not df.empty else ["All"]
 selected_type = st.sidebar.selectbox("Type", type_list, index=0)
 
-mask = (df["Date"].dt.date >= date_range[0]) & (df["Date"].dt.date <= date_range[1])
+mask = (df["Date"].dt.date >= date_range[0]) & (df["Date"].dt.date <= date_range[1]) if not df.empty else []
 if selected_cat != "All":
     mask &= (df["Category"] == selected_cat)
 if selected_type != "All":
     mask &= (df["Type"] == selected_type)
 
-fdf = df.loc[mask].copy()
+fdf = df.loc[mask].copy() if not df.empty else pd.DataFrame()
 
-# KPIs
+# --- KPIs ---
 col1, col2, col3, col4 = st.columns(4)
-total_income = fdf.loc[fdf["Type"] == "Income", "Amount"].sum()
-total_expense = fdf.loc[fdf["Type"] == "Expense", "Amount"].sum()
+total_income = fdf.loc[fdf["Type"] == "Income", "Amount"].sum() if not fdf.empty else 0
+total_expense = fdf.loc[fdf["Type"] == "Expense", "Amount"].sum() if not fdf.empty else 0
 savings = total_income - total_expense
 avg_daily_spend = fdf.loc[fdf["Type"] == "Expense"].groupby(fdf["Date"].dt.date)["Amount"].sum().mean() if not fdf.empty else 0
 
@@ -108,7 +114,7 @@ with col4: kpi_card("Avg Daily Spend", avg_daily_spend if not np.isnan(avg_daily
 
 st.divider()
 
-# Charts
+# --- Charts ---
 tab1, tab2, tab3 = st.tabs(["Category Breakdown", "Monthly Trend", "Top Expenses"])
 
 with tab1:
@@ -141,7 +147,7 @@ with tab3:
 
 st.divider()
 
-# Simple baseline forecast: next-month expense = average of last 3 months
+# Forecast
 st.subheader("🔮 Simple Expense Forecast (baseline)")
 if not fdf.empty:
     monthly_expense = fdf[fdf["Type"]=="Expense"].groupby("YearMonth")["Amount"].sum().reset_index()
@@ -151,12 +157,10 @@ if not fdf.empty:
     else:
         st.write("Not enough months to forecast. Add more data over time.")
 
+# Download filtered data
 st.divider()
 st.subheader("📥 Download Filtered Data")
 if not fdf.empty:
     buff = io.StringIO()
     fdf.to_csv(buff, index=False)
     st.download_button("Download CSV", data=buff.getvalue(), file_name="filtered_transactions.csv", mime="text/csv")
-
-st.divider()
-st.caption("Tip: Replace data/transactions.csv with your own exported bank/app statements for real analysis.")
